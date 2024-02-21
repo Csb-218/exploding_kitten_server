@@ -12,7 +12,7 @@ router.route('/').get(async(req,res)=>{
  
     shuffledCards.unshift(cards[randomCard])
 
-    res.status(200).json({cards:['cat','cat','cat','cat','cat']})
+    res.status(200).json({cards:shuffledCards})
 
 })
 
