@@ -1,2 +1,2 @@
-# exploding_kitten
+# Exploding_Kitten
  
