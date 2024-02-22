@@ -6,11 +6,12 @@ router.route('/').get(async(req,res)=>{
 
     const cards = ['shuffle','bomb','defuse','cat']
 
-    let shuffledCards = shuffle(cards)
+    let shuffledCards = []
 
-    const randomCard = random(4)
- 
-    shuffledCards.unshift(cards[randomCard])
+    for(i=0;i<5;i++){
+        const randomCard = random(4)
+        shuffledCards.unshift(cards[randomCard])
+    }
 
     res.status(200).json({cards:shuffledCards})
 
